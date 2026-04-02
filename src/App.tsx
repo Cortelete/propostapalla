@@ -192,7 +192,17 @@ export default function App() {
                 <LinkIcon size={24} />
               </div>
               <h3 className="text-xl font-display font-semibold mb-4">Experiência Digital Exclusiva</h3>
-              <p className="text-slate-400 mb-6 flex-grow">Criação de uma página totalmente personalizada para o Palladium (Link na bio):</p>
+              <p className="text-slate-400 mb-4">Criação de uma página totalmente personalizada para o Palladium (Link na bio):</p>
+              <div className="mb-6 flex-grow">
+                <a 
+                  href="https://palladiumpg.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-300 hover:bg-blue-500/20 hover:text-white transition-all text-sm font-medium group"
+                >
+                  Acessar Protótipo Real <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
               <ul className="space-y-3 text-sm text-slate-300">
                 <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 shrink-0" /> Design exclusivo (não utilizamos modelos prontos)</li>
                 <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 shrink-0" /> Identidade visual alinhada com a marca</li>
