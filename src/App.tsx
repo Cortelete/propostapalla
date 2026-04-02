@@ -70,7 +70,7 @@ export default function App() {
     const interval = setInterval(() => {
       isLab = !isLab;
       favicon.href = isLab ? '/logolab.png' : '/logopala.png';
-    }, 2000); // Alterna a cada 2 segundos
+    }, 3000); // Alterna a cada 3 segundos
 
     return () => clearInterval(interval);
   }, []);
