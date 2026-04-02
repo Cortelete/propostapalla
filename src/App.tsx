@@ -237,8 +237,8 @@ export default function App() {
             
             <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center">
               <div className="flex-1">
-                <div className="flex items-center gap-4 mb-6">
-                  <img src="/logoclube.png" alt="Clube FM" className="h-12 w-auto object-contain" referrerPolicy="no-referrer" />
+                <div className="flex items-center gap-3 mb-6">
+                  <Radio className="text-blue-400" size={28} />
                   <h2 className="text-3xl font-display font-bold">Presença na Rádio</h2>
                 </div>
                 <p className="text-lg text-slate-300 mb-8">Atuação forte dentro da programação do Labirinto Acústico na Clube FM (94.1 FM).</p>
@@ -267,10 +267,10 @@ export default function App() {
                 </div>
               </div>
               
-              <div className="w-full md:w-1/3 aspect-square rounded-full border border-white/10 flex items-center justify-center relative">
+              <div className="w-full md:w-1/3 aspect-square rounded-full border border-white/10 flex items-center justify-center relative bg-white/5">
                 <div className="absolute inset-4 rounded-full border border-white/5 animate-[spin_20s_linear_infinite]"></div>
                 <div className="absolute inset-8 rounded-full border border-white/5 animate-[spin_15s_linear_infinite_reverse]"></div>
-                <Radio size={64} className="text-white/20" />
+                <img src="/logoclube.png" alt="Clube FM" className="w-3/5 h-3/5 object-contain relative z-10 drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]" referrerPolicy="no-referrer" />
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-transparent rounded-full mix-blend-overlay"></div>
               </div>
             </div>
