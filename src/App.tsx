@@ -61,6 +61,20 @@ export default function App() {
     return () => { document.body.style.overflow = 'unset'; };
   }, [isModalOpen]);
 
+  // Alternate favicon between logolab and logopala
+  useEffect(() => {
+    const favicon = document.getElementById('dynamic-favicon') as HTMLLinkElement;
+    if (!favicon) return;
+
+    let isLab = true;
+    const interval = setInterval(() => {
+      isLab = !isLab;
+      favicon.href = isLab ? '/logolab.png' : '/logopala.png';
+    }, 2000); // Alterna a cada 2 segundos
+
+    return () => clearInterval(interval);
+  }, []);
+
   const handleWhatsAppSend = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !message.trim()) return;
